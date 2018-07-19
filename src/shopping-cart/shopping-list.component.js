@@ -53,6 +53,7 @@ export class ShoppingListComponent extends Component {
 
   removeFromCart(recipe) {
     CartService.removeFromCart(recipe.recipe_id);
+    this.setState({recipes:CartService.getRecipesInCart()})
   }
 }
 
