@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router-dom';
 import './header.component.css';
 
- export class HeaderComponent extends Component {
+  class HeaderComponent extends Component {
 
 
   componentDidMount() {
@@ -45,4 +46,4 @@ import './header.component.css';
   }
 
 }
-
+export default withRouter(HeaderComponent)

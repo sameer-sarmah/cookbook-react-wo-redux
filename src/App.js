@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import {HeaderComponent} from './header/header.component';
+import  HeaderComponent  from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecipeComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-cart/shopping-list.component';
@@ -15,10 +15,9 @@ class App extends Component {
     return (
 
 
-      <BrowserRouter> 
+      <BrowserRouter > 
         <div className="App">
-          <HeaderComponent {...this.props} />
-          <div className="App">
+          <HeaderComponent  />
             <Switch>
                 <Route exact path="/" component={RecipeComponent} />
                 <Route path="/recipes/:id" component={RecipeComponent} />
@@ -27,7 +26,7 @@ class App extends Component {
                 <Route  component={PageNotFoundComponent} />
             </Switch>
           </div>
-        </div>
+       
       </BrowserRouter>
 
     );

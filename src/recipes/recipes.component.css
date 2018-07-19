@@ -22,7 +22,8 @@
 #header{
         background-color: #2f3c48;
 		color: #fafafa;
-        height: 10%;
+		height: 10%;
+		max-height: 64px;
 }
 
  .header-flex-container {
