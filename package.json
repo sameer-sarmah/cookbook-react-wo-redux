@@ -56,7 +56,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "debug-gulp": "node --inspect-brk=5858 webpack.config.js"
   },
   "jest": {
     "collectCoverage": true,
